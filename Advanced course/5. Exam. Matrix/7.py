@@ -65,21 +65,3 @@ for row in matrix:
 
 
 
-
-
-# pos_str = input()
-# chess = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
-# x = 8 - int(pos_str[1])
-# y = chess.index(pos_str[0])
-
-# matrix = [['.'] * 8 for _ in range(8)]
-# matrix[x][y] = 'Q'
-
-# for i in range(8):
-#     for j in range(8):
-#         if ((abs(x - i) > 0 and abs(y - j) == 0) or
-#                 (abs(x - i) == 0 and abs(y - j) > 0) or
-#                 (abs(x - i) == abs(y - j) != 0)):
-#             matrix[i][j] = '*'
-#         print(matrix[i][j], end=' ')
-#     print()

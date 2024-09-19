@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример страницы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+			background-color: #141729; /* Фоновый цвет страницы */
+        }
+
+        header {
+            background-color: #141729;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        nav {
+            background-color: #282B3D;
+            width: 20%;
+            padding: 10px;
+			border: 1px solid #16d348; /* Светло-серый контур */
+			border-radius: 8px; /* Закругление углов */
+			margin: 5px; /* Отступ между nav и content */
+        }
+
+        .content {
+            background-color: #1D2033;
+            flex-grow: 1;
+            padding: 5px;
+			border: 1px solid #16d348; /* Светло-серый контур */
+			border-radius: 8px; /* Закругление углов */
+			margin-left: 2px; /* Отступ между nav и content */
+			margin-top: 5px; /* Отступ между nav и content */
+			margin-bottom: 5px; /* Отступ между nav и content */
+        }
+		
+		.top-panel {
+            background-color: #282B3D;
+            padding: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+			border: 1px solid #424242; /* Светло-серый контур */
+			border-radius: 8px; /* Закругление углов */
+        }
+
+        footer {
+            background-color: #141729;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TehSupport App</h1>
+</header>
+
+<main>
+    <nav>
+        <p>Навигационная панель</p>
+    </nav>
+    <div class="content">
+        <div class="top-panel">
+            <div class="search-bar">
+                <input type="text" placeholder="Поиск...">
+                <button>Найти</button>
+            </div>
+            <div class="other-functions">
+                <button>Функция 1</button>
+                <button>Функция 2</button>
+                <button>Функция 3</button>
+            </div>
+        </div>
+        <p>Основная часть страницы</p>
+    </div>
+</main>
+
+<footer>
+    <p>Футер</p>
+</footer>
+
+</body>
+</html>
