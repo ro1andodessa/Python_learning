@@ -17,4 +17,4 @@ result = sorted([v + '@' + k for k in emails for v in emails[k]])
 # for k in emails:
 #     for v in emails[k]:
 #         result.append(v + k)
-print(result)
+print(*result, sep='\n')

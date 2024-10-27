@@ -42,7 +42,7 @@ for i in range(int(input())):
     s = input().split()
     # sys_files.setdefault(s[0], s[1:])
     # req[s[0]]  = sys_files.get(s[0], '').join(s[1:])
-    print(['Accesss denied', 'OK'][s[1] in sys_files and oper[s[0]] in sys_files[s[1]]])
+    print(['Access denied', 'OK'][s[1] in sys_files and oper[s[0]] in sys_files[s[1]]])
 
 print(sys_files)
 print(req)
