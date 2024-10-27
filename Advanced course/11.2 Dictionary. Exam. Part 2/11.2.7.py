@@ -26,3 +26,16 @@
 # Тимур:
 # Карандаш 5
 # Тетрадь 12
+orders = {}
+
+for _ in range(int(input())):
+    user, product, qnt = input().split()
+    orders.setdefault(user, {})
+    orders[user][product] = orders[user].get(product, 0) + int(qnt)
+    
+
+for i in sorted(orders.keys()):
+    print(i, ':', sep='')
+    print(*(f'{k} {v}' for k, v in sorted(orders[i].items())), sep='\n')
+
+print(orders)
